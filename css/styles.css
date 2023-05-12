@@ -37,6 +37,7 @@ html::-webkit-scrollbar-thumb {
   }
 }
 
+/*** Header ***/
 .header {
   position: fixed;
   top: 0;
