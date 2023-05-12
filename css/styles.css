@@ -65,3 +65,6 @@ html::-webkit-scrollbar-thumb {
 .header .icons div:hover {
   color: #219150;
 }
+.header #menu-btn {
+  display: none;
+}
