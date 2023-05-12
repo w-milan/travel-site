@@ -2,6 +2,7 @@
 @import "partials/reset";
 @import "partials/variables";
 @import "partials/mixins";
+@import "partials/media-queries";
 
 html {
   font-size: 62.5%;
@@ -19,6 +20,14 @@ html {
 
   &::-webkit-scrollbar-thumb {
     background: $black;
+  }
+
+  @include lg {
+    font-size: 55%;
+  }
+
+  @include sm {
+    font-size: 50%;
   }
 }
 
@@ -53,6 +62,33 @@ html {
       &:hover {
         color: $green;
       }
+
+      @include md {
+        margin: 1rem;
+        font-size: 3rem;
+      }
+    }
+
+    #nav-close {
+      font-size: 5rem;
+      cursor: pointer;
+      color: $black;
+      display: none;
+    }
+
+    @include md {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: $white;
+      z-index: 1;
+      width: 35rem;
+      height: 100%;
+      box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -70,6 +106,14 @@ html {
 
   #menu-btn {
     display: none;
+
+    @include md {
+      display: inline-block;
+    }
+  }
+
+  @include xl {
+    padding: 2rem;
   }
 }
 

@@ -26,6 +26,16 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #10221b;
 }
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 .header {
   position: fixed;
@@ -54,6 +64,34 @@ html::-webkit-scrollbar-thumb {
 .header .navbar a:hover {
   color: #219150;
 }
+@media (max-width: 768px) {
+  .header .navbar a {
+    margin: 1rem;
+    font-size: 3rem;
+  }
+}
+.header .navbar #nav-close {
+  font-size: 5rem;
+  cursor: pointer;
+  color: #10221b;
+  display: none;
+}
+@media (max-width: 768px) {
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 1;
+    width: 35rem;
+    height: 100%;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .header .icons a,
 .header .icons div {
   font-size: 2.5rem;
@@ -67,4 +105,14 @@ html::-webkit-scrollbar-thumb {
 }
 .header #menu-btn {
   display: none;
+}
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem;
+  }
 }
