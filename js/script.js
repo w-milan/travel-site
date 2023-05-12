@@ -24,6 +24,12 @@ window.onscroll = () => {
 
 // Swipper JS 
 var swiper = new Swiper(".home-slider", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  grabCursor: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
