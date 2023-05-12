@@ -74,21 +74,34 @@ html {
       cursor: pointer;
       color: $black;
       display: none;
+
+      @include md {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+      }
     }
 
     @include md {
       position: fixed;
       top: 0;
-      left: 0;
+      left: -110%;
       background: $white;
       z-index: 1;
       width: 35rem;
       height: 100%;
-      box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: center;
+    }
+
+    &.active {
+      @include md { 
+        left: 0;
+        box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+      }
     }
   }
 

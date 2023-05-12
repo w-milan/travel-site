@@ -77,19 +77,32 @@ html::-webkit-scrollbar-thumb {
   display: none;
 }
 @media (max-width: 768px) {
+  .header .navbar #nav-close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+}
+@media (max-width: 768px) {
   .header .navbar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -110%;
     background: #fff;
     z-index: 1;
     width: 35rem;
     height: 100%;
-    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .header .navbar.active {
+    left: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   }
 }
 .header .icons a,
