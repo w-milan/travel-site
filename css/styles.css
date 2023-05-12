@@ -43,7 +43,7 @@ html::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   padding: 2rem 9%;
-  z-index: 1000;
+  z-index: 1;
   display: flex;
   align-items: center;
 }
@@ -128,4 +128,59 @@ html::-webkit-scrollbar-thumb {
   .header {
     padding: 2rem;
   }
+}
+
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transform: translateY(-110%);
+}
+.search-form.active {
+  transform: translateY(0%);
+}
+.search-form #close-search {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 5rem;
+}
+.search-form #close-search:hover {
+  color: #219150;
+}
+.search-form form {
+  width: 70rem;
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid #fff;
+  display: flex;
+  align-items: center;
+}
+.search-form form input {
+  width: 100%;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+  padding-right: 2rem;
+}
+.search-form form input::placeholder {
+  color: #aaa;
+}
+.search-form form label {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+}
+.search-form form label:hover {
+  color: #219150;
 }
