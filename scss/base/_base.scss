@@ -24,3 +24,27 @@ html {
     font-size: 50%;
   }
 }
+
+section {
+  padding: 5rem 9%;
+
+  @include xl {
+    padding: 3rem 2rem;
+  }
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: $border;
+  color: $black;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
