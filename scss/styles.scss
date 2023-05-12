@@ -55,6 +55,18 @@ html {
       }
     }
   }
+
+  .icons a,
+  .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: $black;
+
+    &:hover {
+      color: $green;
+    }
+  }
 }
 
 
