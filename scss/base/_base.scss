@@ -18,6 +18,7 @@ html {
 
   @include lg {
     font-size: 55%;
+    scroll-padding-top: 7rem;
   }
 
   @include sm {
