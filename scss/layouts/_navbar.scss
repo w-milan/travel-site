@@ -10,6 +10,11 @@
   display: flex;
   align-items: center;
 
+  &.active {
+    background: $white;
+    box-shadow: $box-shadow;
+  }
+
   .logo {
     margin-right: auto;
     font-size: 2.5rem;
