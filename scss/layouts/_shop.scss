@@ -17,6 +17,29 @@
         width: 100%;
         object-fit: cover;
       }
+
+      .icons {
+        width: 100%;
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        text-align: center;
+        z-index: 10;
+
+        a {
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          background: $black;
+          color: $white;
+          margin: 0 .2rem;
+
+          &:hover {
+            background: $green;
+          }
+        }
+      }
     }
 
     .content {
