@@ -356,3 +356,20 @@ section {
   padding: 1rem 0;
   line-height: 2;
 }
+
+/*** Shop section ***/
+.shop .slide {
+  width: 35rem;
+  border: 0.2rem solid #10221b;
+}
+.shop .slide .image {
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  width: 100%;
+}
+.shop .slide .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
