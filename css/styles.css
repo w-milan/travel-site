@@ -68,6 +68,11 @@ section {
   font-size: 4rem;
   color: #10221b;
 }
+@media (max-width: 576px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
 
 /*** Header ***/
 .header {
@@ -359,8 +364,10 @@ section {
 
 /*** Shop section ***/
 .shop .slide {
-  width: 35rem;
   border: 0.2rem solid #10221b;
+}
+.shop .slide:hover .image .icons {
+  transform: translateY(0);
 }
 .shop .slide .image {
   position: relative;
@@ -380,6 +387,7 @@ section {
   left: 0;
   text-align: center;
   z-index: 10;
+  transform: translateY(7rem);
 }
 .shop .slide .image .icons a {
   height: 4.5rem;

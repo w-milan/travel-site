@@ -3,8 +3,11 @@
 .shop {
 
   .slide {
-    width: 35rem;
     border: $border;
+
+    &:hover .image .icons {
+      transform: translateY(0);
+    }
 
     .image {
       position: relative;
@@ -25,6 +28,7 @@
         left: 0;
         text-align: center;
         z-index: 10;
+        transform: translateY(7rem);
 
         a {
           height: 4.5rem;
