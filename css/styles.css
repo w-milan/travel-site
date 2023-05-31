@@ -373,3 +373,21 @@ section {
   width: 100%;
   object-fit: cover;
 }
+.shop .slide .content {
+  padding: 1rem 0;
+  text-align: center;
+}
+.shop .slide .content h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+.shop .slide .content .price {
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  color: #219150;
+}
+.shop .slide .content .stars i {
+  font-size: 1.7rem;
+  color: #10221b;
+}
