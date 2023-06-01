@@ -540,6 +540,16 @@ section {
   z-index: 0;
   margin-bottom: 3rem;
 }
+.reviews .slide .text::before {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0.7rem;
+  height: 3rem;
+  width: 3rem;
+  background: #eee;
+  transform: rotate(45deg);
+}
 .reviews .slide .user {
   display: flex;
   align-items: center;
