@@ -651,3 +651,11 @@ section {
   background: none;
   color: #10221b;
 }
+
+/*** Clients section ***/
+.clients .slide {
+  text-align: center;
+}
+.clients .slide img {
+  height: 12rem;
+}
