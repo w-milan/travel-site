@@ -104,3 +104,28 @@ var swiper = new Swiper(".review-slider", {
     },
   },
 });
+
+var swiper = new Swiper(".blogs-slider", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
