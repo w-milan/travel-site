@@ -4,7 +4,6 @@
 
   .slide {
     text-align: center;
-    width: 35rem;
     padding: 2rem;
 
     img {
@@ -36,6 +35,17 @@
           color: $green;
         }
       }
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      padding: 1rem 0;
+      line-height: 2;
+      color: $black;
     }
   }
 }

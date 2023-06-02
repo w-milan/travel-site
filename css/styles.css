@@ -573,7 +573,6 @@ section {
 /*** Blog section ***/
 .blogs .slide {
   text-align: center;
-  width: 35rem;
   padding: 2rem;
 }
 .blogs .slide img {
@@ -601,4 +600,13 @@ section {
 .blogs .slide .icons a i {
   padding-right: 0.5rem;
   color: #219150;
+}
+.blogs .slide h3 {
+  font-size: 2rem;
+}
+.blogs .slide p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  line-height: 2;
+  color: #10221b;
 }
