@@ -571,3 +571,34 @@ section {
 }
 
 /*** Blog section ***/
+.blogs .slide {
+  text-align: center;
+  width: 35rem;
+  padding: 2rem;
+}
+.blogs .slide img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.blogs .slide .icons {
+  background: #10221b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  top: -2rem;
+  display: inline-block;
+}
+.blogs .slide .icons a {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+.blogs .slide .icons a:hover {
+  color: #219150;
+}
+.blogs .slide .icons a i {
+  padding-right: 0.5rem;
+  color: #219150;
+}
